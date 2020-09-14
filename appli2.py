@@ -72,7 +72,7 @@ def run():
         Compte_epargne = st.selectbox("Indiquez l'état d'approvisionnement du compte épargne du client",["moins de 3000","entre 3000 et 10000","entre 10000 et 30000", "plus de 30000"])
         Compte_courant = st.selectbox("Indiquez l'état d'approvisionnement du compte courant du client:",['moins de 500','entre 500 et 3000','plus de 3000'])
         Credit_amount = st.text_input("Indiquez le montant du compte courant du client:", "2000")
-        Duration = st.slider("Indiquez la durée du prêt:",min_value=3,max_value=94, value=54)
+        Duration = st.slider("Indiquez la durée du prêt(en mois):",min_value=3,max_value=94, value=54)
         
         resultat=""
         
