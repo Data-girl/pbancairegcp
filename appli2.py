@@ -138,7 +138,7 @@ def run():
 
             def get_table_download_link(concat):
                 
-                val = to_excel(concat)
+                val = to_excel(concat) 
                 b64 = base64.b64encode(val)  # val looks like b'...'
                 return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">Télécharger le fichier en xls</a>' # decode b'abc' => abc
 
