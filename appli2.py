@@ -93,7 +93,7 @@ def run():
         if st.button("Prédire"):
             
             preds = resultat=model.predict(df)
-            if preds > 0.5:
+            if preds == 0:
                 st.success("***Il s'agit d'un client à risque.***")
             else:
                 st.error("***Il s'agit d'un client sans risque.***")
